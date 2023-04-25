@@ -1,0 +1,54 @@
+.maindiv {
+    position: relative;
+    overflow: hidden;
+    max-width: 15.938rem;
+    box-shadow: 0 1px 10px rgb(0 0 0 / 0.2);
+}
+
+.over {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transform: translateY(100%);
+    transition: transform .2s ease-in-out;
+    overflow: auto;
+    max-height: 100%;
+    box-shadow: 3px 3px;
+    top: 3rem;
+
+}
+
+.over::-webkit-scrollbar {
+    width: .5rem;
+    background-color: transparent;
+}
+
+.over::-webkit-scrollbar-thumb {
+    background-color: lightgray;
+
+}
+
+.maindiv:hover .over {
+    transform: translateY(0%);
+
+}
+
+.chlddiv {
+    position: relative;
+}
+
+.effect {
+    position: absolute;
+    padding: 4rem;
+    color: rgb(247, 247, 247);
+    font-size: 25px;
+    font-weight: 600;
+
+}
+
+.over ul li {
+    padding-bottom: 3%;
+}
